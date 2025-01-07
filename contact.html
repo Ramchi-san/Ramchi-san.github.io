@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramcie's Personal Website</title>
+
+        <!----------------------CSS Files------------------------->
+        <link rel="stylesheet" href="CSS/style-contact.css">
+        <link rel="stylesheet" href="CSS/color-1.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    </head>
+    <body class="dark">
+
+        <!--------================ Main Container Start ====================---------------->
+        <div class="main-container">
+            <!---------========== Aside Start ===========----------->
+            <div class="aside">
+                <div class="logo">
+                    <a href="#"><span>R</span>amcie</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li><a href="index.html" ><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="services.html"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li class="active-page"><a href="contact.html" class="active"><i class="fa fa-comments"></i>Contact</a></li>
+                </ul>
+            </div>
+            <!---------========== Aside End ===========----------->
+            <!---------========== Main-Content Start ===========----------->
+            <div class="main-content">
+                <!------------=========== Contact Section Start ===========----------------->
+                <div class="contact section" id="Contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Contact Me</h2>
+                            </div>
+                        </div>
+                        <h3 class="contact-title padd-15">Do You Have Any Question?</h3>
+                        <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                        <div class="row">
+                            <!--------==========contact info item start ========---------->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-phone"></i></div>
+                                <h4>Call Us On</h4>
+                                <p>+63 9997926820</p>
+                            </div>
+                            <!--------==========contact info item end ========---------->
+                            <!--------==========contact info item start ========---------->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                                <h4>Future Office</h4>
+                                <p>Somewhere</p>
+                            </div>
+                            <!--------==========contact info item end ========---------->
+                            <!--------==========contact info item start ========---------->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-envelope"></i></div>
+                                <h4>Email</h4>
+                                <p>Ramcie.Labadan@g.msuiit.edu.ph</p>
+                            </div>
+                            <!--------==========contact info item end ========---------->
+                            <!--------==========contact info item start ========---------->
+                            <div class="contact-info-item padd-15">
+                                <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                                <h4>Website</h4>
+                                <p>www.domain.com</p>
+                            </div>
+                            <!--------==========contact info item end ========---------->
+                        </div>
+                        <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                        <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+                        <!------------========== Contact Form ===========------------>
+                        <div class="row">
+                            <div class="contact-form padd-15">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control padd-15" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control padd-15" placeholder="Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control padd-15" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="" id=""  class="form-control padd-15" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p> Copyright &copy; 2021 Ramcie </p>
+                    </div> 
+                </div>
+                <!------------=========== Contact Section End ===========----------------->
+            </div>
+            <!---------========== Main-Content End ===========----------->
+        </div>
+        <!--------================ Main Container End ====================---------------->
+
+        <!-----------------js/script.js----------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            /*======================== Typing Animation =====================*/
+            var typed = new Typed(".typing", {
+                strings:["","Full-stack Developer", "Network Systems Architect", "Graph Theorist"],
+                typeSpeed: 120,
+                BackSpeed: 80,
+                loop: true
+            })
+        </script>
+        <script>
+            /*======================== Aside START =====================*/
+            const navSection = document.querySelector(".nav")
+            navLists = navSection.querySelector("li"),
+            navListCount = navLists.length;
+            const navTogglerBtn = document.querySelector(".nav-toggler"),
+            navToggler2 = document.querySelector(".nav-toggler")
+                aside = document.querySelector(".aside");
+            navTogglerBtn.addEventListener("click", () => {
+                asideSectionTogglerBtn();    
+            })
+
+            function asideSectionTogglerBtn(){
+                aside.classList.toggle("open");
+                navTogglerBtn.classList.toggle("open");
+                for(let i = 0; i < totalSection; i++){
+                    navLists[i].classList.toggle("open"); //End
+                }
+            }
+
+            /*========= Aside END ===========*/
+
+
+
+        </script>
+        
+    </body>
+</html>

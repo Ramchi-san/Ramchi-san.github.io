@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramcie's Personal Website</title>
+
+        <!----------------------CSS Files------------------------->
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/color-1.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="CSS/color-1.css" class="alternate-style" title="color-1" disabled>
+    </head>
+    <body class="dark">
+        <!--------================ Main Container Start ====================---------------->
+        <div class="main-container">
+            <!---------========== Aside Start ===========----------->
+            <div class="aside">
+                <div class="logo">
+                    <a href="index.html"><span>R</span>amcie</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li class="active-page"><a href="index.html" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="services.html"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+                </ul>
+            </div>
+            <!---------========== Aside End ===========----------->
+            <!---------========== Main-Content Start ===========----------->
+            <div class="main-content">
+                <!------------=========== Home Section Start ===========----------------->
+                <div class="home active section" id="Home">
+                    <div class="container">
+                        <div class="row">
+                            <div class="home-info padd-15">
+                                <h3 class="hello">Hello, my name is <span class="name">Ramcie Labadan </span></h3>
+                                <h3 class="my-profession"> I'm an aspiring <span class="typing">Computer Scientist</span></h3>
+                                <p>I'm currently studying my undergraduate degree in BS Information Technology. In the future,
+                                    I hope to become someone able to create systems and algorithms that'll propel the Philippines
+                                in terms of its Information Technology development.</p>
+                                <p class="disclaimer">Disclaimer: Most of the contents of this website should be assumed as imagined by the creator of this website.</p>
+                                <a href="#" class="btn">Download CV</a>
+                            </div>
+                            <div class="home-img padd-15">
+                                <img src="Images/Just some image 2.jfif" alt="This was an AI-generated image of Filipino man with glasses">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="footer">
+                                <p> Copyright &copy; 2021 Ramcie </p>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+                <!------------=========== Home Section End ===========----------------->
+            </div>
+            <!---------========== Main-Content End ===========----------->
+            <!---------============ Foooter Start ==========----------->
+            
+            <!-----------========== Footer EN =========-------------->      
+        </div>
+        <!--------================ Main Container End ====================---------------->
+        <!-----------------js/script.js----------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            /*======================== Typing Animation =====================*/
+            var typed = new Typed(".typing", {
+                strings:["","Full-stack Developer", "Network Systems Architect", "Graph Theorist"],
+                typeSpeed: 120,
+                BackSpeed: 80,
+                loop: true
+            })
+        </script>
+        <script>
+            /*======================== Aside START =====================*/
+            const navSection = document.querySelector(".nav")
+            navLists = navSection.querySelector("li"),
+            navListCount = navLists.length;
+            const navTogglerBtn = document.querySelector(".nav-toggler"),
+            navToggler2 = document.querySelector(".nav-toggler")
+                aside = document.querySelector(".aside");
+            navTogglerBtn.addEventListener("click", () => {
+                asideSectionTogglerBtn();    
+            })
+
+            function asideSectionTogglerBtn(){
+                aside.classList.toggle("open");
+                navTogglerBtn.classList.toggle("open");
+                for(let i = 0; i < totalSection; i++){
+                    navLists[i].classList.toggle("open"); //End
+                }
+            }
+
+            /*========= Aside END ===========*/
+        </script>
+        
+    </body>
+</html>

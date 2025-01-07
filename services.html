@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramcie's Personal Website</title>
+
+        <!----------------------CSS Files------------------------->
+        <link rel="stylesheet" href="CSS/style-services2.css">
+        <link rel="stylesheet" href="CSS/color-1.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        
+    </head>
+    <body class="dark">
+
+        <!--------================ Main Container Start ====================---------------->
+        <div class="main-container">
+            <!---------========== Aside Start ===========----------->
+            <div class="aside">
+                <div class="logo">
+                    <a href="#"><span>R</span>amcie</a>
+                </div>
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
+                <ul class="nav">
+                    <li> <a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i>About</a></li>
+                    <li class="active-page"><a href="services.html"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+                </ul>
+            </div>
+            <!---------========== Aside End ===========----------->
+            <!---------========== Main-Content Start ===========----------->
+            <div class="main-content">
+               
+                <!------------=========== Services Section Start ===========----------------->
+                <div class="service section" id="Services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Services</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <!---------========= Services Item Start  ============------------>
+                           <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Android development</h4>
+                                <p>Our personalized Android development service is tailored to your unique needs, 
+                                    ensuring that your mobile app reflects your individual style and vision, and 
+                                    provides a seamless and engaging user experience.</p>
+                            </div>
+                        </div>
+                        <!---------========= Services Item Start  ============------------>
+                        <!---------========= Services Item Start  ============------------>
+                        <div class="service-item">
+                            <div class="service-item-inner padd-15">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>Our web development service offers expertly crafted websites and web applications that are optimized for performance, user engagement, and seamless functionality, providing a strong online presence for your brand or project.</p>
+                            </div>
+                        </div>
+                        <!---------========= Services Item Start  ============------------>
+                        <!---------========= Services Item Start  ============------------>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Web design</h4>
+                                <p>Our web design service creates visually stunning and user-friendly websites that captivate your audience, convey your brand's identity, and enhance the overall user experience, leaving a lasting impression on your visitors.</p>
+                            </div>
+                        </div>
+                        <!---------========= Services Item Start  ============------------>
+                        <!---------========= Services Item Start  ============------------>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Back-end Development</h4>
+                                <p>Our back-end development service establishes the core infrastructure and functionality that powers your digital systems, ensuring data security, reliability, and efficient performance, so you can focus on delivering exceptional user experiences.</p>
+                            </div>
+                        </div>
+                        <!---------========= Services Item Start  ============------------>
+                        <!---------========= Services Item Start  ============------------>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>Research Paper Writing</h4>
+                                <p>Our research paper writing service offers expert assistance in crafting well-researched and impactful papers across various academic disciplines, helping you effectively communicate your ideas and insights to a global audience while meeting rigorous academic standards.</p>
+                            </div>
+                        </div>
+                        <!---------========= Services Item Start  ============------------>
+                       
+                    </div>
+                </div>
+                <div class="footer">
+                    <p> Copyright &copy; 2021 Ramcie </p>
+                </div> 
+            </div>
+            <!------------=========== Services Section End ===========----------------->
+            </div>
+          
+        </div>
+    
+    </div>
+                <!------------=========== Services Section End ===========----------------->
+               
+        <!-----------------js/script.js----------------------->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            /*======================== Aside START =====================*/
+            const navSection = document.querySelector(".nav")
+            navLists = navSection.querySelector("li"),
+            navListCount = navLists.length;
+            const navTogglerBtn = document.querySelector(".nav-toggler"),
+            navToggler2 = document.querySelector(".nav-toggler")
+                aside = document.querySelector(".aside");
+            navTogglerBtn.addEventListener("click", () => {
+                asideSectionTogglerBtn();    
+            })
+
+            function asideSectionTogglerBtn(){
+                aside.classList.toggle("open");
+                navTogglerBtn.classList.toggle("open");
+                for(let i = 0; i < totalSection; i++){
+                    navLists[i].classList.toggle("open"); //End
+                }
+            }
+
+            /*========= Aside END ===========*/
+        </script>
+    </body>
+</html>
